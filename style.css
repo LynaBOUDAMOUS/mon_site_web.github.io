@@ -1,73 +1,67 @@
-/* Réinitialisation de la mise en page par défaut */
+/* Réinitialisation de base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Corps du site */
-body {
     font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
 }
 
-/* En-tête - Page de couverture */
-header {
+body {
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* En-tête avec image de couverture */
+header .cover-photo {
     position: relative;
     width: 100%;
     height: 300px;
+    overflow: hidden;
 }
 
-.cover-photo img {
+header .cover-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Section Profil */
-.profil {
+header .cover-photo::after {
+    content: "Bienvenue sur mon site";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #000;
     text-align: center;
-    margin-top: -50px;
 }
 
-.profil-info {
-    display: inline-block;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Profil */
+.profil {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: #fff;
 }
 
 .photo-profil {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin-bottom: 20px;
-    border: 5px solid #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.profil h1 {
-    font-size: 2rem;
+    object-fit: cover;
     margin-bottom: 10px;
 }
 
-.profil p {
-    font-size: 1.2rem;
-    color: #777;
-}
-
-/* Section Coordonnées */
+/* Coordonnées */
 .contact {
-    background: #f9f9f9;
-    padding: 30px;
-    text-align: center;
+    padding: 20px;
+    background-color: #eaeaea;
 }
 
 .contact h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .contact ul {
@@ -75,27 +69,13 @@ header {
 }
 
 .contact li {
-    margin-bottom: 10px;
+    margin: 5px 0;
 }
 
-.contact a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-/* Section Projets */
+/* Projets en flexbox */
 .projets {
-    padding: 30px;
-}
-
-.projets h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
+    padding: 20px;
+    background-color: #fff;
 }
 
 .projets-liste {
@@ -106,43 +86,55 @@ header {
 }
 
 .projet {
-    width: 300px;
-    background: #fff;
+    background-color: #f9f9f9;
     border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.projet:hover {
+    transform: translateY(-5px);
 }
 
 .projet img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .projet h3 {
-    font-size: 1.5rem;
-    margin: 10px;
-}
-
-.projet p {
-    font-size: 1rem;
-    padding: 10px;
-    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
 }
 
 .projet a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0066cc;
     text-decoration: none;
-    color: #3498db;
 }
 
 .projet a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
+/* Pied de page avec sources */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #333;
-    color: white;
+    padding: 15px;
+    background-color: #ddd;
+    font-size: 0.9rem;
+}
+
+/* Ajout manuel des sources (à insérer dans le footer HTML si souhaité) */
+footer::after {
+    content: "Sources images : couverture par [auteur/image], autres photos issues des projets personnels de Lyna Boudamous.";
+    display: block;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #555;
 }
