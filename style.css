@@ -1,0 +1,148 @@
+/* Réinitialisation de la mise en page par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps du site */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* En-tête - Page de couverture */
+header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.cover-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Section Profil */
+.profil {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.profil-info {
+    display: inline-block;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profil h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.profil p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Section Coordonnées */
+.contact {
+    background: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Section Projets */
+.projets {
+    padding: 30px;
+}
+
+.projets h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.projets-liste {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projet {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projet img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projet h3 {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.projet p {
+    font-size: 1rem;
+    padding: 10px;
+    color: #555;
+}
+
+.projet a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.projet a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
