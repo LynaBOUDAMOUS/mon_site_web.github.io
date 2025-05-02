@@ -7,33 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Page de couverture -->
+    <!-- En-tête avec photo de couverture et menu -->
     <header>
         <div class="cover-photo">
             <img src="photodecouverture.avif" alt="Photo de couverture">
+            <div class="cover-content">
+                <img src="Boudamous_lyna_photo.jpg" alt="Ma photo de profil" class="photo-profil">
+                <h1>Bonjour et bienvenue sur mon site</h1>
+
+                <!-- Menu principal -->
+                <nav class="menu">
+                    <a href="#contact">Contact</a>
+                    <a href="#projets">Projets</a>
+                    <a href="#legales">Mentions légales</a>
+                </nav>
+
+                <!-- Affichage coordonnée sans JS -->
+                <input type="checkbox" id="toggle-contact" class="toggle-checkbox">
+                <label for="toggle-contact" class="toggle-label">Voir mes coordonnées</label>
+                <div class="contact-details">
+                    <p>Email : <a href="mailto:boudamous.lyna@gmail.com">boudamous.lyna@gmail.com</a></p>
+                    <p>Téléphone : +33 7 51 27 31 85</p>
+                    <p><a href="https://www.linkedin.com/in/lyna-boudamous-296874327/">LinkedIn</a></p>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Section Profil -->
-    <section class="profil">
-        <div class="profil-info">
-            <img src="Boudamous _lyna_photo.jpg" alt="Ma photo de profil" class="photo-profil">
-            <h1>Lyna BOUDAMOUS</h1>
-        </div>
-    </section>
-
-    <!-- Section Coordonnées -->
-    <section class="contact">
-        <h2>Mes Coordonnées</h2>
-        <ul>
-            <li>Email : <a href="mailto:boudamous.lyna@gmail.com">boudamous.lyna@gmail.com</a></li>
-            <li>Téléphone : +33 6 12 34 56 78</li>
-            <li><a href="https://www.linkedin.com/in/lyna-boudamous-296874327/"> LinkedIn</a></li>
-        </ul>
-    </section>
-
     <!-- Section Projets -->
-    <section class="projets">
+    <section id="projets" class="projets">
         <h2>Mes Projets</h2>
         <div class="projets-liste">
             <!-- Projet 1 -->
@@ -48,7 +50,7 @@
             <div class="projet">
                 <img src="photo_Projet_ACM_ACP_clustering.jpg" alt="Projet 2">
                 <h3>Segmentation des départements selon l'offre culturelle</h3>
-                <p><strong>Objectif :</strong> Étudier la variabilité de l'accès à la culture en fonction des facteurs socio-économiques, et classifier les départements selon leur profil culturel.</p>
+                <p><strong>Objectif :</strong> Étudier la variabilité de l'accès à la culture en fonction des facteurs socio-économiques.</p>
                 <p><strong>Technologies utilisées :</strong> ACP, ACM, clustering - sous R.</p>
                 <a href="Segmentation_des_departements_français_selon_leur_offre_culturelle_et_leur_contexte_socio-economiques.pdf">Voir le projet</a>
             </div>
@@ -57,34 +59,32 @@
                 <img src="photo-croissance économique de l'Afrique.jpg" alt="Projet 3">
                 <h3>Croissance économique en Afrique</h3>
                 <p><strong>Objectif :</strong> Analyser l'impact des IDE sur la croissance de 32 pays africains entre 2000 et 2022.</p>
-                <p><strong>Technologies utilisées :</strong> Données de panel, modèles économétriques - réalisés sous R.</p>
-                <a href="Croissance_economique_en_Afrique _le_role_des_investissements_directs_etrangers.html">Voir le projet</a>
+                <p><strong>Technologies utilisées :</strong> Données de panel, modèles économétriques - R.</p>
+                <a href="Croissance_economique_en_Afrique _le_role-des_investissements_directs_etrangers.html">Voir le projet</a>
             </div>
             <!-- Projet 4 -->
             <div class="projet">
                 <img src="photo_culture.jpg" alt="Projet 4">
                 <h3>Culture générale</h3>
                 <p><strong>Objectif :</strong> Nettoyer une base de données et visualiser les résultats.</p>
-                <p><strong>Technologies utilisées :</strong> Traitement de données et visualisation – avec R.</p>
+                <p><strong>Technologies utilisées :</strong> Traitement de données et visualisation – R.</p>
                 <a href="culture_general.html">Voir le projet</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Section Mentions légales / Sources -->
+    <footer id="legales">
         <p>&copy; 2025 Lyna BOUDAMOUS - Tous droits réservés.</p>
-        <!-- Sources des images -->
         <div class="sources">
-            <h3>Sources des images</h3>
+            <h3>Mentions légales - Sources des images</h3>
             <ul>
                 <li>Photo de couverture : <a href="https://www.globaldots.com/" target="_blank">Lien</a></li>
                 <li>Photo projet 1 : Data.gouv.fr - <a href="https://www.data.gouv.fr/fr/reuses/analyse-de-loffre-culturelle-en-france-1/" target="_blank">Dashboard culturel</a></li>
                 <li>Photo projet 2 : <a href="https://bobobox.com/" target="_blank">Lien</a></li>
-                <li>Photo projet 3 : <a href="http://goafricaonline.com/" target="_blank">Lien</a></li>
-                <li>Photo projet 4 : <a href="http://goafricaonline.com/" target="_blank">Lien</a></li>
+                <li>Photo projet 3 & 4 : <a href="http://goafricaonline.com/" target="_blank">Lien</a></li>
+            </ul>
         </div>
-
     </footer>
 </body>
 </html>
