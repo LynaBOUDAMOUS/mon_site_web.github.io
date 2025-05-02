@@ -1,33 +1,35 @@
-/* Reset et base */
+/* Reset & base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
 body {
     line-height: 1.6;
     background-color: #f5f5f5;
     color: #333;
-    scroll-behavior: smooth; /* Scroll fluide */
 }
 
-/* En-tête */
+
+
+/* Assure-toi que .cover-photo est en relative */
 .cover-photo {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 300px;
     overflow: hidden;
-}
-
-.cover-photo img {
+  }
+  
+  /* L’image reste en fond */
+  .cover-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.cover-content {
+  }
+  
+  /* Contenu superposé */
+  .cover-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -35,96 +37,83 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 30px;
+    gap: 10px;
+    padding: 20px 30px;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     text-align: center;
-}
-
-.cover-content h1 {
-    font-size: 2rem;
-    color: #000;
-}
-
-/* Photo de profil */
-.photo-profil {
-    width: 160px;
-    height: 160px;
+  }
+  
+  /* Titre */
+  .cover-content h1 {
+    font-size: 1.8rem;
+    color: #fff;               /* texte blanc */
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 5px;
+  }
+  
+  /* Paragraphe de bienvenue */
+  .cover-content p {
+    font-size: 1.2rem;    
+    color: #fff;           /* texte blanc */          
+    text-shadow: 1px 1px 3px #000;
+  }
+  
+  /* Photo de profil (ajuste la taille si besoin) */
+  .cover-content .photo-profil {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #4a90e2;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 3px solid #4a90e2;
+  }
+  
+  /* … le reste de ton CSS … */
+  
+.photo-profil {
+    width: 100px;    /* ou la taille que tu préfères */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4a90e2;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* Menu */
-.menu {
-    display: flex;
-    gap: 15px;
-    margin-top: 15px;
-}
 
-.menu a {
-    text-decoration: none;
-    background-color: #4a90e2;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-}
 
-.menu a:hover {
-    background-color: #357ab8;
-}
-
-/* Toggle sans JS */
+/* Toggle coordonnées sans JS */
 .toggle-checkbox {
     display: none;
 }
-
 .toggle-label {
-    padding: 10px 20px;
+    padding: 8px 16px;
     background-color: #4a90e2;
     color: white;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 1rem;
-    margin-top: 10px;
 }
-
 .toggle-label:hover {
     background-color: #357ab8;
 }
-
 .contact-details {
     display: none;
-    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
 }
-
 #toggle-contact:checked + .toggle-label + .contact-details {
     display: block;
 }
 
-/* Section Projets */
+/* Projets (inchangé) */
 .projets {
-    padding: 50px 20px;
-    background-color: #fff;
+    padding: 20px;
 }
-
-.projets h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
 .projets-liste {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
-
 .projet {
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -133,11 +122,7 @@ body {
     padding: 15px;
     transition: transform 0.3s;
 }
-
-.projet:hover {
-    transform: translateY(-5px);
-}
-
+.projet:hover { transform: translateY(-5px); }
 .projet img {
     width: 100%;
     height: 180px;
@@ -145,24 +130,16 @@ body {
     border-radius: 8px;
     margin-bottom: 10px;
 }
-
-.projet h3 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-}
-
+.projet h3 { font-size: 1.2rem; margin-bottom: 5px; }
 .projet a {
     display: inline-block;
     margin-top: 10px;
     color: #0066cc;
     text-decoration: none;
 }
+.projet a:hover { text-decoration: underline; }
 
-.projet a:hover {
-    text-decoration: underline;
-}
-
-/* Footer / Mentions légales */
+/* Footer / Sources (inchangé) */
 footer {
     background-color: #fafafa;
     padding: 30px 20px;
@@ -170,26 +147,11 @@ footer {
     text-align: center;
     font-size: 0.95rem;
 }
-
-.sources h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-}
-
-.sources ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.sources ul li {
-    margin-bottom: 8px;
-}
-
+.sources h3 { font-size: 1.3rem; margin-bottom: 15px; }
+.sources ul { list-style: none; padding: 0; }
+.sources ul li { margin-bottom: 8px; }
 .sources a {
     color: #0044cc;
     text-decoration: none;
 }
-
-.sources a:hover {
-    text-decoration: underline;
-}
+.sources a:hover { text-decoration: underline; }
