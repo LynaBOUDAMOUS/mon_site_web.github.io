@@ -1,6 +1,0 @@
-La gestion et l’analyse de données tabulaires constitue une tâche centrale dans de nombreux domaines d’activité. Toutefois, les outils classiques comme Excel, Power BI ou Google Sheets atteignent rapidement leurs 
-limites en termes de flexibilité, de performance ou d’adaptabilité. Le présent mémoire vise à concevoir une application entièrement développée en Python, capable de charger, filtrer, analyser et visualiser des données, au 
-travers d’une interface utilisateur simple. 
-le choix est porté sur Dash pour une interface web interactive. 
-L’application intègrera également des outils d’exportation et de visualisation 
-graphique.
