@@ -1,160 +1,254 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lyna BOUDAMOUS</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Lyna Boudamous, Data Analyst et Data Scientist.">
+  <title>Lyna Boudamous — Data Analyst · Data Scientist</title>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
-    <!-- En-tête avec photo de couverture -->
-    <header>
-        <div class="cover-photo">
-            <img src="photodecouverture.avif" alt="Photo de couverture">
-            <div class="cover-content">
-                <!-- Photo de profil à côté du texte -->
-                <img src="photo_moi.jpg" alt="Ma photo de profil" class="photo-profil">
-                <h1>Lyna BOUDAMOUS</h1>
-                <p>Bonjour et bienvenue sur mon site</p>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#accueil">LYNA<span>.</span>BOUDAMOUS</a>
+      <nav class="navlinks">
+        <a href="#profil">Profil</a>
+        <a href="#projets">Projets</a>
+        <a href="#experience">Expérience</a>
+        <a class="nav-cta" href="#contact">Me contacter ↗</a>
+      </nav>
+    </div>
+  </header>
 
-                <!-- Bouton de téléchargement du CV -->
-                <p>
-                    <a href="CV_Lyna_BOUDAMOUS.pdf" download class="btn-download">Télécharger mon CV</a>
-                </p>
-
-                <!-- Toggle coordonnées sans JS -->
-                <input type="checkbox" id="toggle-contact" class="toggle-checkbox">
-                <label for="toggle-contact" class="toggle-label">Contact</label>
-                <div class="contact-details">
-                    <p>Email : <a href="mailto:boudamous.lyna@gmail.com">boudamous.lyna@gmail.com</a></p>
-                    <p><a href="https://www.linkedin.com/in/lyna-boudamous-296874327/">LinkedIn</a></p>
-                </div>
-            </div>
+  <main>
+    <section class="hero" id="accueil">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Disponible pour de nouvelles opportunités</div>
+          <h1>La data au service de <em>décisions utiles.</em></h1>
+          <p class="lead">
+            Diplômée d’un Master 2 en Économie d’Entreprise et des Marchés,
+            je transforme les données en analyses claires, modèles prédictifs
+            et outils d’aide à la décision. Je recherche un poste de
+            <strong>Data Analyst</strong> ou <strong>Data Scientist</strong>.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="CV_Lyna_BOUDAMOUS.pdf" download>
+              ↓ Télécharger mon CV
+            </a>
+            <a class="btn btn-secondary" href="#projets">Découvrir mes projets ↘</a>
+          </div>
         </div>
-    </header>
 
-    <!-- Section Projets (inchangée) -->
-    <section class="projets">
-        <h2>Mes Projets</h2>
-        <div class="projets-liste">
-            <!-- Projet 1 -->
-            <div class="projet">
-                <img src="Assurance-auto.jpg" alt="Projet 1">
-                <h3>3R: Gestion de portefeuille avec risques multiples appliquée à un portefeuille d’assurance automobile</h3>
-                <p><strong>Objectif :</strong> Ce travail s’inscrit dans le cadre du module Recherche – Réalisation – Restitution (3R), dont l’objectif est d’appliquer les outils analytiques, méthodologiques et économétriques acquis au cours de la formation à des problématiques économiques concrètes.
-
-                        La première partie du projet est consacrée à la présentation et à l’analyse de la théorie moderne du portefeuille développée par Harry Markowitz. 
-                        Fondée sur le compromis rendement–risque et sur le principe de diversification, cette théorie constitue un cadre conceptuel fondamental pour l’étude des décisions d’allocation des ressources en situation d’incertitude.
-                        
-                        L’analyse met en évidence la pertinence de cette approche au-delà de son champ d’application initial, en particulier dans le contexte de la gestion d’un portefeuille d’assurance automobile. L’assureur fait face simultanément à des risques financiers issus de la gestion de ses placements et à des risques techniques liés à la fréquence et à la sévérité des sinistres.
-                        L’intégration de ces différentes sources d’incertitude permet d’élargir la notion de risque et de mieux appréhender leurs interactions.
-                        
-                        Toutefois, les limites du modèle classique de Markowitz, notamment l’hypothèse de normalité des rendements et la focalisation exclusive sur le risque financier, appellent à l’utilisation de modèles plus adaptés au secteur assurantiel. À ce titre, le projet sera poursuivi par une analyse empirique reposant sur des données d’assurance automobile.</p>
-                <p><strong>Technologies utilisées :</strong> R,Latex, Modèles de comptage.</p>
-                <a href="Gestion_de_portefeuille.pdf">Voir le projet</a>
-            </div>
-
-            <!-- Projet 2 -->
-            <div class="projet">
-                <img src="dashboard_ia.png" alt="Projet 1">
-                <h3>Dashboard : Impact de l'IA sur l'environnement</h3>
-                <p><strong>Objectif :</strong> Aujourd’hui, l’intelligence artificielle générative est de plus en plus utilisée, mais son impact environnemental reste difficile à percevoir. Dans ce dashboard, réalisé avec Power BI nous avons croisé plusieurs sources de données pour rendre cet impact plus concret. </p>
-                <p><strong>Technologies utilisées :</strong> R, Power BI.</p>
-                <a href="https://www.data.gouv.fr/reuses/impact-de-lia-sur-lenvironnement">Voir le projet</a>
-            </div>
-
-
-            <!-- Projet 3 -->
-            <div class="projet">
-                <img src="photo_dashboard.PNG" alt="Projet 3">
-                <h3>Dashboard : Analyse de l'offre culturelle en France</h3>
-                <p><strong>Objectif :</strong> Visualiser les différentes offres culturelles par région.</p>
-                <p><strong>Technologies utilisées :</strong> R, R Shiny.</p>
-                <a href="https://www.data.gouv.fr/fr/reuses/analyse-de-loffre-culturelle-en-france-1/">Voir le projet</a>
-            </div>
-            
-            <!-- Projet 4 -->
-            <div class="projet">
-                <img src="photo_Projet_ACM_ACP_clustering.jpg" alt="Projet 4">
-                <h3>Segmentation des départements selon l'offre culturelle</h3>
-                <p><strong>Objectif :</strong> Étudier la variabilité de l'accès à la culture en fonction des facteurs socio-économiques.</p>
-                <p><strong>Technologies utilisées :</strong> ACP, ACM, clustering - sous R.</p>
-                <a href="Segmentation_des_departements_français_selon_leur_offre_culturelle_et_leur_contexte_socio-economiques.pdf">Voir le projet</a>
-            </div>
-
-
-            
-            <!-- Projet 5 -->
-            <div class="projet">
-                <img src="photo_transport.jpg" alt="Projet 5">
-                <h3>Optimisation du transport</h3>
-                <p><strong>Objectif :</strong> Le projet vise à exploiter les données contenues dans le fichier transport.csv, qui décrit les quantités de produits disponibles dans plusieurs entrepôts, 
-                les quantités demandées par différents clients, ainsi que les coûts unitaires de transport entre chaque entrepôt et chaque client.
-                L’objectif principal est de modéliser et de résoudre un problème de transport afin de déterminer un plan optimal d’acheminement des produits depuis les entrepôts vers les clients. 
-                Ce plan doit permettre de satisfaire l’ensemble des demandes tout en minimisant le coût total de transport, sous contraintes de disponibilité des stocks et de satisfaction de la demande.
-                Ce travail mobilise des techniques d’optimisation et de programmation mathématique, et permet d’illustrer l’application concrète de méthodes analytiques à un problème logistique réel.</p>
-                <p><strong>Technologies utilisées :</strong> Python.</p>
-                <a href="Optimisation_transport.zip">Télécharger le projet</a>
-            </div>
-
-        
-
-            <!-- Projet 6 -->
-            <div class="projet">
-                <img src="photo-croissance économique de l'Afrique.jpg" alt="Projet 6">
-                <h3>Croissance économique en Afrique</h3>
-                <p><strong>Objectif :</strong> Analyser l'impact des IDE sur la croissance de 32 pays africains entre 2000 et 2022.</p>
-                <p><strong>Technologies utilisées :</strong> Données de panel, modèles économétriques - R.</p>
-                <a href="Croissance_economique_en_Afrique _le_role_des_investissements_directs_etrangers.html">Voir le projet</a>
-            </div>
-
-            <!-- Projet 7 -->
-            <div class="projet">
-                <img src="photo_application_Dash.png" alt="Projet 7">
-                <h3>Mémoire de recherche: Développement d’une application web de traitement et visualisation de données tabulaires avec Dash</h3>
-                <p><strong>Description:</strong> Dans un monde de plus en plus orienté par les données, l’exploitation efficace des fichiers CSV et Excel est devenue essentielle pour les entreprises, chercheurs et institutions. Ce projet propose une application web interactive, développée en Python, qui permet à tout utilisateur – même sans compétences techniques – d’explorer, analyser et visualiser des données tabulaires de manière intuitive et flexible.<p>
-                <p><strong>Fonctionnalités clés :</strong> Import de fichiers CSV et Excel,Gestion simultanée de plusieurs jeux de données, Nettoyage et traitement des données (filtres, gestion des valeurs manquantes, fusion/concaténation), Analyse statistique descriptive (moyenne, médiane, écart-type, etc.), Visualisations interactives avec Dash & Plotly, Export des résultats en CSV ou PDF (via ReportLab)
-                <p><strong>Objectif :</strong> rendre l’analyse de données tabulaires simple, rapide et accessible à tous.</p>
-                <p><strong>Technologies utilisées :</strong> Pandas, Dash, Plotly, ReportLab et met l’accent sur l’accessibilité, la performance et la robustesse - Python.</p>
-                <a href="Mémoire_ Développement_d’une_application_web_de_traitement_de_visualisation_de_donnéees_tabulaires_avec_Dash .pdf">Voir le projet</a>
-            </div>
-
-            <!-- Projet 8 -->
-            <div class="projet">
-                <img src="photo_couverture_classification.png" alt="Projet 8">
-                <h3>Prédiction d'un rappel d'un candidat à partir de son cv</h3>
-                <p><strong>Description:</strong>Dans un marché de l’emploi hautement compétitif, les entreprises doivent identifier rapidement les candidats les plus adaptés à leurs besoins. Ce projet vise à développer un modèle prédictif capable d’estimer la probabilité qu’un candidat soit rappelé après l’envoi de son CV, en fonction des informations qu’il contient.<p>
-                <p><strong>Données utilisées :</strong> Base de 4 870 CV fictifs envoyés à Chicago et Boston en 2001, 26 variables décrivant le profil des candidats (informations personnelles et compétences), Données complètes et sans valeurs manquantes, permettant une analyse optimale
-                <p><strong>Objectif :</strong> Analyser les critères qui influencent la sélection des candidats, Tester et comparer plusieurs modèles de classification supervisée (LDA, QDA, arbres de décision, etc.), Identifier l’algorithme le plus performant pour prédire le rappel des candidats sous R.</p>
-                <a href="Prédiction_d'un_rappel_d'un_candidat_à_partir_de_son_cv.pdf">Voir le projet</a>
-            </div>
-            
-            <!-- Projet 9-->
-            <div class="projet">
-                <img src="photo_culture.jpg" alt="Projet 9">
-                <h3>Culture générale</h3>
-                <p><strong>Objectif :</strong> Nettoyer une base de données et visualiser les résultats.</p>
-                <p><strong>Technologies utilisées :</strong> Traitement de données et visualisation – R.</p>
-                <a href="culture_general.html">Voir le projet</a>
-            </div>
-        </div>
+        <aside class="hero-card">
+          <div class="monogram">LB</div>
+          <h2>Lyna Boudamous</h2>
+          <p class="role">Data Analyst · Data Scientist</p>
+          <div class="mini-stats">
+            <div class="stat"><strong>Python · R</strong><span>Analyse & modélisation</span></div>
+            <div class="stat"><strong>Machine Learning</strong><span>Classification & NLP</span></div>
+            <div class="stat"><strong>Power BI</strong><span>Visualisation</span></div>
+            <div class="stat"><strong>Économie</strong><span>Analyse décisionnelle</span></div>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <!-- Mentions légales / Sources (inchangées) -->
-    <footer>
-        <p>&copy; 2025 Lyna BOUDAMOUS - Tous droits réservés.</p>
-        <div class="sources">
-            <h3>Sources des images</h3>
-            <ul>
-                <li>Photo de couverture : <a href="https://www.globaldots.com/" target="_blank">Lien</a></li>
-                <li>Photo projet 1 : <a href="https://www.conseilspratique.fr/wp-content/uploads/2024/02/Assurance-auto.jpg" target="_blank">Lien</a></li>
-                <li>Photo projet 2 : Data.gouv.fr - <a href="https://www.data.gouv.fr/fr/reuses/analyse-de-loffre-culturelle-en-france-1/" target="_blank">Lien</a></li>
-                <li>Photo projet 3 : <a href="https://bobobox.com/" target="_blank">Lien</a></li>
-                <li>Photo projet 4 : <a href="https://voone-actu.com/wp-content/uploads/2023/03/Comment-optimiser-la-logistique-dun-entrepot-scaled.jpg" target="_blank">Lien</a></li>
-                <li>Photo projet 5 &amp; 7 : <a href="http://goafricaonline.com/" target="_blank">Lien</a></li>
-                <li>Photo projet 8 : <a href="https://pixabay.com/fr/photos/search/biblioth%c3%a8que/">Lien</a></li>
-            </ul>
+    <section class="section" id="profil">
+      <div class="wrap">
+        <div class="kicker">01 — Profil</div>
+        <h2>Comprendre. Analyser. Agir.</h2>
+        <div class="about-grid">
+          <article class="panel">
+            <p class="muted">
+              Mon parcours associe analyse économique, statistiques et science
+              des données. J’aime partir d’un besoin métier, structurer les
+              données, tester des méthodes adaptées puis restituer les résultats
+              de façon accessible.
+            </p>
+            <div class="skills">
+              <span class="pill">Python</span><span class="pill">SQL</span>
+              <span class="pill">R</span><span class="pill">Pandas</span>
+              <span class="pill">Scikit-learn</span><span class="pill">NLP</span>
+              <span class="pill">Power BI</span><span class="pill">Dash / Plotly</span>
+              <span class="pill">Économétrie</span>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="skill-row"><strong>Analyse & préparation</strong><span>Nettoyage · Exploration · Indicateurs</span></div>
+            <div class="skill-row"><strong>Modélisation</strong><span>Classification · Clustering · Économétrie</span></div>
+            <div class="skill-row"><strong>Visualisation</strong><span>Dashboards · Data storytelling</span></div>
+            <div class="skill-row"><strong>Restitution métier</strong><span>Interprétation · Recommandations</span></div>
+          </article>
         </div>
-    </footer>
+      </div>
+    </section>
+
+    <section class="section" id="projets">
+      <div class="wrap">
+        <div class="kicker">02 — Portfolio</div>
+        <h2>Projets sélectionnés</h2>
+        <p class="section-intro">De données brutes à des résultats interprétables.</p>
+
+        <article class="featured">
+          <div class="kicker">Projet phare · NLP & Machine Learning</div>
+          <h3>Détection automatique des réclamations par analyse de messages</h3>
+          <p>
+            Développement et évaluation d’une approche de classification de
+            messages pour repérer les réclamations. Préparation des textes,
+            classification supervisée avec CamemBERT et analyse des résultats
+            au regard des validations métier.
+          </p>
+          <div class="tagline">
+            <span class="tag">Python</span><span class="tag">NLP</span>
+            <span class="tag">CamemBERT</span><span class="tag">Classification</span>
+          </div>
+        </article>
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">Tous les projets</button>
+          <button class="filter" data-filter="visualisation">Visualisation</button>
+          <button class="filter" data-filter="ml">Machine Learning</button>
+          <button class="filter" data-filter="economie">Économie & optimisation</button>
+        </div>
+
+        <div class="projects">
+          <article class="project" data-category="visualisation">
+            <div class="project-type">Dashboard</div>
+            <h3>Impact de l’IA sur l’environnement</h3>
+            <p>Exploration de sources de données pour rendre lisibles les enjeux environnementaux associés à l’intelligence artificielle.</p>
+            <div class="tagline"><span class="tag">Power BI</span><span class="tag">Visualisation</span></div>
+            <a class="project-link" href="https://www.data.gouv.fr/reuses/impact-de-lia-sur-lenvironnement" target="_blank" rel="noopener">Voir le projet ↗</a>
+          </article>
+
+          <article class="project" data-category="visualisation">
+            <div class="project-type">Application</div>
+            <h3>Analyse de l’offre culturelle en France</h3>
+            <p>Visualisation interactive pour explorer la répartition territoriale de l’offre culturelle par région.</p>
+            <div class="tagline"><span class="tag">R</span><span class="tag">Shiny</span></div>
+            <a class="project-link" href="https://www.data.gouv.fr/fr/reuses/analyse-de-loffre-culturelle-en-france-1/" target="_blank" rel="noopener">Voir le projet ↗</a>
+          </article>
+
+          <article class="project" data-category="ml">
+            <div class="project-type">Classification</div>
+            <h3>Prédiction du rappel d’un candidat</h3>
+            <p>Comparaison de modèles supervisés pour étudier les facteurs associés au rappel après l’envoi d’un CV.</p>
+            <div class="tagline"><span class="tag">R</span><span class="tag">LDA / QDA</span><span class="tag">Arbres</span></div>
+            <a class="project-link" href="Prédiction_d'un_rappel_d'un_candidat_à_partir_de_son_cv.pdf" target="_blank" rel="noopener">Consulter l’étude ↗</a>
+          </article>
+
+          <article class="project" data-category="ml">
+            <div class="project-type">Analyse multivariée</div>
+            <h3>Segmentation des départements français</h3>
+            <p>Étude des différences territoriales d’accès à la culture selon l’offre et le contexte socio-économique.</p>
+            <div class="tagline"><span class="tag">ACP</span><span class="tag">ACM</span><span class="tag">Clustering</span></div>
+            <a class="project-link" href="Segmentation_des_departements_français_selon_leur_offre_culturelle_et_leur_contexte_socio-economiques.pdf" target="_blank" rel="noopener">Consulter l’étude ↗</a>
+          </article>
+
+          <article class="project" data-category="economie">
+            <div class="project-type">Économétrie</div>
+            <h3>Investissements étrangers et croissance en Afrique</h3>
+            <p>Analyse du rôle des investissements directs étrangers dans la croissance de 32 pays africains entre 2000 et 2022.</p>
+            <div class="tagline"><span class="tag">Données de panel</span><span class="tag">R</span></div>
+            <a class="project-link" href="Croissance_economique_en_Afrique.html" target="_blank" rel="noopener">Voir le projet ↗</a>
+          </article>
+
+          <article class="project" data-category="economie">
+            <div class="project-type">Optimisation</div>
+            <h3>Optimisation d’un plan de transport</h3>
+            <p>Modélisation d’un problème d’allocation des stocks et de satisfaction de la demande pour minimiser les coûts.</p>
+            <div class="tagline"><span class="tag">Python</span><span class="tag">Optimisation</span></div>
+            <a class="project-link" href="Optimisation_transport.zip">Télécharger le projet ↓</a>
+          </article>
+
+          <article class="project" data-category="visualisation">
+            <div class="project-type">Application web</div>
+            <h3>Analyse de fichiers tabulaires</h3>
+            <p>Application pour importer, nettoyer, explorer et visualiser des fichiers CSV et Excel.</p>
+            <div class="tagline"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Dash</span></div>
+            <a class="project-link" href="Memoire_application_Dash.pdf" target="_blank" rel="noopener">Consulter le mémoire ↗</a>
+          </article>
+
+          <article class="project" data-category="economie">
+            <div class="project-type">Finance & risque</div>
+            <h3>Gestion de portefeuille en assurance automobile</h3>
+            <p>Étude du compromis rendement-risque, de la diversification et des risques en assurance.</p>
+            <div class="tagline"><span class="tag">R</span><span class="tag">Risque</span></div>
+            <a class="project-link" href="Gestion_de_portefeuille.pdf" target="_blank" rel="noopener">Consulter le projet ↗</a>
+          </article>
+
+          <article class="project" data-category="ml">
+            <div class="project-type">Data cleaning</div>
+            <h3>Nettoyage et exploration de données</h3>
+            <p>Préparation d’un jeu de données, analyse descriptive et visualisations des principaux résultats.</p>
+            <div class="tagline"><span class="tag">R</span><span class="tag">Statistiques</span></div>
+            <a class="project-link" href="culture_general.html" target="_blank" rel="noopener">Voir le projet ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="wrap">
+        <div class="kicker">03 — Parcours</div>
+        <h2>Formation & expérience</h2>
+        <div class="timeline">
+          <article class="experience">
+            <div class="date">Avril – septembre 2026</div>
+            <h3>Data Scientist — Stage</h3>
+            <div class="org">MGEN Technologies · Performance opérationnelle</div>
+            <p>Projet NLP appliqué aux messages adhérents : préparation des textes, classification, analyse des prédictions et confrontation aux validations métier.</p>
+          </article>
+          <article class="experience">
+            <div class="date">Master 2 · obtenu en 2026</div>
+            <h3>Économie d’Entreprise et des Marchés</h3>
+            <div class="org">Université de Tours</div>
+            <p>Formation en analyse économique, statistiques, économétrie, machine learning et valorisation des données pour l’aide à la décision.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact-box">
+          <div>
+            <div class="kicker">04 — Contact</div>
+            <h2>Parlons de vos projets data.</h2>
+            <p>Vous recrutez un profil Data Analyst ou Data Scientist ? Je serais ravie d’échanger sur vos besoins.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:boudamous.lyna@gmail.com">✉ Me contacter</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/lyna-boudamous-296874327/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Lyna Boudamous · Portfolio Data</div>
+  </footer>
+
+  <script>
+    const filters = document.querySelectorAll('.filter');
+    const projects = document.querySelectorAll('.project');
+
+    filters.forEach(button => {
+      button.addEventListener('click', () => {
+        filters.forEach(item => item.classList.remove('active'));
+        button.classList.add('active');
+
+        const category = button.dataset.filter;
+
+        projects.forEach(project => {
+          const visible =
+            category === 'all' || project.dataset.category === category;
+          project.classList.toggle('hidden', !visible);
+        });
+      });
+    });
+  </script>
 </body>
 </html>
