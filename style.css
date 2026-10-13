@@ -295,42 +295,36 @@ h1 em {
 .about-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 22px;
+  gap: 24px;
   align-items: stretch;
 }
 
 .about-grid > .panel {
+  width: 100%;
+  min-width: 0;
   height: 100%;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.about-grid h2 {
+  font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+  line-height: 1.2;
+  letter-spacing: -.04em;
+  margin: 10px 0 20px;
+}
+
+.about-grid p {
+  color: var(--muted);
 }
 
 .formation-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.formation-card h2 {
-  font-size: 1.6rem;
-  line-height: 1.2;
-  margin: 12px 0 22px;
-}
-
-.formation-card h3 {
-  font-size: 1.1rem;
-  line-height: 1.4;
-  margin: 12px 0 6px;
-}
-
-.formation-card .date {
-  margin-top: 4px;
-}
-
-.formation-card .org {
-  margin-bottom: 16px;
-}
-
-.formation-card p {
-  margin-bottom: 22px;
 }
 
 .formation-card .project-link {
@@ -457,35 +451,40 @@ h1 em {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 17px;
+  gap: 24px;
+  align-items: stretch;
 }
 
 .project {
+  min-width: 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 285px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 22px;
-  transition: transform .2s, border-color .2s;
-}
-
-.project:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent);
 }
 
 .project-image {
-  display: block;
   width: 100%;
-  height: 165px;
+  height: 180px;
   object-fit: cover;
+  object-position: center;
   border-radius: 12px;
-  margin: 0 0 18px;
-  background: var(--surface2);
 }
 
+@media (max-width: 950px) {
+  .projects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 570px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+}
 .project-top {
   display: flex;
   align-items: center;
